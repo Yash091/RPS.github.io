@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.name {
+  text-align: center;
+  margin: 2%;
+  font-size: 5vw;
+  font-weight: 500;
+  font-family: cursive;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px #73ff00, 0 0 5px #73ff00;
+}
+.play-area {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  /* justify-content: center; */
+  margin: 10%;
+  margin-top: 5%;
+  background-color: rgb(57, 55, 197);
+  padding: 3%;
+  height: 35rem;
+  background-color: black;
+  box-shadow: 5px 5px 8px 8px rgb(96, 206, 86);
+  border-radius: 4%;
+}
+i {
+  font-size: 20px;
+}
+.player-stat {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: safe;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: aliceblue;
+  text-shadow: 0 0 3px #6fe729, 0 0 5px #15ff00;
+}
+.logo {
+  display: grid;
+  justify-content: center;
+}
+.logo i {
+  font-size: 15rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 5px 5px 7px #54b812f8, 0px 0px 4px #00ac25;
+}
+.bot {
+  text-align: right;
+}
+
+.choice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.choice button {
+  font-size: 2rem;
+  border-radius: 40px;
+  width: 12rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 2px 2px 4px 4px aliceblue;
+  background-color: black;
+  color: white;
+}
+.choice button:hover {
+  background-color: #00ac25;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: 700;
+}
+.game-stat {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 3rem;
+  justify-content: center;
+  margin: 10%;
+  padding: 3%;
+  background-color: black;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 15px 100px 0 rgba(77, 240, 12, 0.863);
+}
+.winlogo {
+  text-align: center;
+  padding-left: 4rem;
+}
+.win-stat {
+  text-align: center;
+  color: chartreuse;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.restart {
+  margin-bottom: 3%;
+  text-align: center;
+}
+.restart button {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.restart button:hover {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .player-stat {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+  .bot {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 400px) {
+  .winlogo {
+    padding-left: 1.2rem;
+  }
+  .play-area {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  /* .choice {
+    justify-content: left;
+    margin-left: 3%;
+  } */
+}
+.hidden {
+  display: none;
+}

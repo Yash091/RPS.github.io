@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPS</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="name">Rock paper scissor</div>
+    <div class="game">
+      <div class="play-area">
+        <div class="player-stat">
+          <div class="player">player:<span class="ps">0</span></div>
+          <div class="bot">Bot:<span class="bs">0</span></div>
+        </div>
+        <div class="logo">
+          <div class="bef">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="https://assets3.lottiefiles.com/packages/lf20_uUwoJg.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <div class="aft1 hidden">
+            <i class="fas fa-hand-paper"></i>
+          </div>
+          <div class="aft2 hidden">
+            <i class="fas fa-hand-rock"></i>
+            <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="https://assets5.lottiefiles.com/packages/lf20_siofeolp.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px"
+              loop
+              autoplay
+            ></lottie-player> -->
+          </div>
+
+          <div class="aft3 hidden">
+            <i class="fa fa-solid fa-hand-scissors"></i>
+            <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player
+              src="https://assets5.lottiefiles.com/packages/lf20_1iasmopc.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px"
+              loop
+              autoplay
+            ></lottie-player> -->
+          </div>
+        </div>
+
+        <div class="choice">
+          <div class="rock">
+            <button class="r">Rock</button>
+          </div>
+          <div class="paper">
+            <button class="p">Paper</button>
+          </div>
+          <div class="scissor">
+            <button class="s">Scissor</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-stat hidden">
+      <div class="winlogo">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://assets3.lottiefiles.com/datafiles/TGHznaeDaWwQDCY/data.json"
+          background="transparent"
+          speed="1"
+          style="width: 200px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <div class="win-stat">Player Wins the game🍷</div>
+      <div class="restart">
+        <button class="again">Play again🔁</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
